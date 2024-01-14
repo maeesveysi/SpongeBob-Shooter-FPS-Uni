@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public float maxVelocityChange = 10f;
 
     [Space]
-    public float jumpHeight = 5f;
+    public float jumpHeight = 10f;
 
     private Vector2 input;
     private Rigidbody rb;

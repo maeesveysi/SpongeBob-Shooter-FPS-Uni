@@ -34,7 +34,7 @@ public class Weapon : MonoBehaviour
             PhotonNetwork.Instantiate(hitVFX.name, hit.point,Quaternion.identity);
             if  (hit.transform.gameObject.GetComponent<Health>())
             {
-                hit.transform.gameObject.GetComponent<PhotonView>().RPC("Take Damage!" , RpcTarget.All, damage);
+                hit.transform.gameObject.GetComponent<PhotonView>().RPC("TakeDamage" , RpcTarget.All, damage);
             }
         }
     }

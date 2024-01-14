@@ -12,7 +12,7 @@ public class Health : MonoBehaviour
     public void TakeDamage(int _damage)
     {
         healthTxt.text = health.ToString();
-        health -= -_damage;
+        health -= _damage;
         if (health <=0)
         {
             Destroy(gameObject);
